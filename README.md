@@ -1,1 +1,7 @@
-# pak_open_university
+# Open Virutal Universtiy
+
+```
+yarn
+yarn dev
+```
+
