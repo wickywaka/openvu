@@ -6,13 +6,20 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Vite + React</h1>
-      <iframe src='https://www.youtube.com/embed/E7wJTI-1dvQ'
-        frameborder='0'
-        allow='autoplay; encrypted-media'
-        allowfullscreen
-        title='video'
-      />
+      <div className="Video">
+        <iframe
+          width="960"
+          height="615"
+          src="https://www.youtube.com/embed/7EmboKQH8lM"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div className="Comments">
+        Comments goes here
+      </div>
     </div>
   )
 }
