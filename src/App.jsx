@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="App">
-      <LecturePage source={"https://www.youtube.com/embed/7EmboKQH8lM"} />
+      <LecturePage />
     </div>
   )
 }
