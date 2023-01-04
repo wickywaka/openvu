@@ -11,7 +11,7 @@ export default function LecturePage() {
     "https://www.youtube.com/embed/lyNetvEfvT0",
   ]
 
-  const nextVideo = () => {
+  const onNext = () => {
     console.log("Next clicked")
     let newSource = source + 1
     if (newSource => sources.length) {
@@ -21,7 +21,7 @@ export default function LecturePage() {
     setSource(newSource)
   }
 
-  const prevVideo = () => {
+  const onPrevious = () => {
     console.log("Prev clicked")
     let newSource = source - 1
     if (newSource < 0) {
@@ -34,7 +34,7 @@ export default function LecturePage() {
   return (
     <div className="App">
       <VideoPlayer source={sources[source]} />
-      <PageControls nextFn={nextVideo} prevFn={prevVideo} />
+      <PageControls onNext={onNext} onPrevious={onPrevious} />
       <Comments source={sources[source]} />
     </div>
   )

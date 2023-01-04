@@ -1,8 +1,8 @@
-export function PageControls({ nextFn, prevFn }) {
+export function PageControls({ nextFn, onPrevious }) {
   return (
     <div className='Navigation'>
-      <button onClick={prevFn} > Previous</button>
-      <button onClick={nextFn} > Next</button>
+      <button onClick={onNext} > Previous</button>
+      <button onClick={onPrevious} > Next</button>
     </div>
   )
 }
